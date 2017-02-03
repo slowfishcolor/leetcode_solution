@@ -1,15 +1,13 @@
-package no1TwoSum;
+package no001TwoSum;
 
 import java.util.HashMap;
 import java.util.Map;
 
 /**
- * O(n) runtime, O(n) space – Hash table:
- * We could reduce the runtime complexity of looking up a value to O(1) using a hash map that maps a value to its index.
-    public
+ * from clean code handbook
  * Created by Prophet on 2017/1/31.
  */
-public class TwoSumSolution_2 implements TwoSumSolution {
+public class TwoSumSolution_3 implements TwoSumSolution {
     /**
      * Given an array of integers, return indices of the two numbers such that they add up to a specific target.
      * You may assume that each input would have exactly one solution.
@@ -29,17 +27,10 @@ public class TwoSumSolution_2 implements TwoSumSolution {
     public int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
-            map.put(nums[i], i);
+            int x = nums[i];
+            if (map.containsKey(target - x)) return new int[]{map.get(target - x), i};
+            map.put(x, i);
         }
-        int a = 0;
-        int b = 0;
-        for (a = 0; a < nums.length; a++) {
-            if ((map.get(target - nums[a]) != null) && (map.get(target - nums[a]) != a)) {
-                b = map.get(target - nums[a]);
-                break;
-            }
-            if (b != 0) break;
-        }
-        return new int[]{a, b};
+        throw new IllegalArgumentException("No two sum solution");
     }
 }

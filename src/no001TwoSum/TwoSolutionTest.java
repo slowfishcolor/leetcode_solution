@@ -1,4 +1,4 @@
-package no1TwoSum;
+package no001TwoSum;
 
 /**
  * Created by Prophet on 2017/1/31.

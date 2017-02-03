@@ -1,4 +1,4 @@
-package no28ImplementStrstr;
+package no028ImplementStrstr;
 
 /**
  * Implement strStr().
