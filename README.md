@@ -1,3 +1,7 @@
 # Solutions for LeetCode
-This is my solutions for the algorithm problems on leetcode.com.  
-Coded in Java. Enjoy :) 
+This is my solutions for problems on leetcode.com.
+
+* `src` are the java solutions for algorithm problems.
+* `database` are the sql solutions for database problems.
+
+Enjoy :) 
