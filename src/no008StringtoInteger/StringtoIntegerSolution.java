@@ -1,4 +1,4 @@
-package no8StringtoInteger;
+package no008StringtoInteger;
 
 /**
  * Created by Prophet on 2017/2/7.
