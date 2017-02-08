@@ -1,4 +1,4 @@
-package no21MergeTwoSortedLists;
+package no021MergeTwoSortedLists;
 
 /**
  * Created by Prophet on 2017/2/8.
